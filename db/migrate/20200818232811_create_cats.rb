@@ -4,6 +4,7 @@ class CreateCats < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :color
       t.string :gender
+    end
   end
 end
 ## based on the diagram we made yesterday, cats would have name, color and gender.

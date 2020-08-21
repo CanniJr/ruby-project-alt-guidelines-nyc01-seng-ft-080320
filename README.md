@@ -1,3 +1,17 @@
+1.  Point of this application is to show a list of cats from the movie chosen by user.
+    - A user can login
+    - Given a selection of movies that has cats in them
+    - receive a list of cats associated with the movie
+
+2.  Database is 100% hard-coded from the Studio Ghibli API 
+    https://ghibliapi.herokuapp.com/
+
+3.  Install by cloning this repo and run bundle install on your terminal.
+    https://github.com/CanniJr/ruby-project-alt-guidelines-nyc01-seng-ft-080320
+
+
+
+
 Module One Final Project
 ========================
 

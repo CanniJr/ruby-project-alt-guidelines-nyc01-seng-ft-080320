@@ -63,18 +63,14 @@ puts '┃┃╱╰╋━┻╮╭╋━━╮╭━━┳╯╰╮┃┃╱╰�
 puts '┃┃╱╭┫╭╮┃┃┃━━┫┃╭╮┣╮╭╯┃┃╭━┫╭╮┣┫╭╮┃┃┣┫'
 puts '┃╰━╯┃╭╮┃╰╋━━┃┃╰╯┃┃┃╱┃╰┻━┃┃┃┃┃╰╯┃╰┫┃'
 puts '╰━━━┻╯╰┻━┻━━╯╰━━╯╰╯╱╰━━━┻╯╰┻┻━━┻━┻╯'
-sleep(3)
+# sleep(3)
 
 User.login
 selection = Movie.movie_select
-Movie.find_by(name: selection)
-
+puts "Here's a list of cats from the movie!"
 binding.pry
-
-sleep(2)
-
-# movie_input = gets.chomp
+Movie.find_by(name: selection).cats
 
 
-# binding.pry
-0
+# sleep(2)
+

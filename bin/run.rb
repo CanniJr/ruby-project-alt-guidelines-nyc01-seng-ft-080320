@@ -4,6 +4,7 @@ require 'pry'
 
 
 
+
 puts '                           ╓▓▓▄                      ,▓▓▄'
 puts '                          ▓██╣▓▓                    ╔██╬╬▓'
 puts '                         ]██╬╣╣╣▌                  @██╬╣╣╬⌐'
@@ -67,10 +68,16 @@ puts '╰━━━┻╯╰┻━┻━━╯╰━━╯╰╯╱╰━━━�
 
 User.login
 selection = Movie.movie_select
+cats_in_movie = Movie.find_by(name: selection).cats
 puts "Here's a list of cats from the movie!"
+Movie.movie_selected
 binding.pry
-Movie.find_by(name: selection).cats
+
+# run Movie.movie_selected method
 
 
 # sleep(2)
+
+# cli = CLI.new
+# cli.start
 

@@ -1,3 +1,5 @@
+
+
 class Movie < ActiveRecord::Base
     has_many :cats
 
@@ -12,5 +14,10 @@ class Movie < ActiveRecord::Base
         end
     end
 
+    def self.movie_selected 
+        cats_in_movie.map do |cats|
+            cats.name
+        end
+    end
 
 end

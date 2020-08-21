@@ -4,15 +4,19 @@ class User < ActiveRecord::Base
 
     def self.login
         user_name = PROMPT.ask("What is your name?", default: "Type your name")
-        puts "Welcome to the world of Ghibli, #{user_name}!"
-        # sleep(5)
+            if user_name == "exit"
+                Kernel.exit
+            else
+                puts "Welcome to the world of Ghibli, #{user_name}!"
+            end
+        end
     end
 
     def self.sign_up
-         signup = PROMPT.collect do
-         key(:name).ask("What's your name?")
-         key(:username).ask("Create a Username.")
-         key(:password).mask("Type your Password.")
-        end
-    end
+        signup = PROMPT.collect do
+        key(:name).ask("What's your name?")
+        key(:username).ask("Create a Username.")
+        key(:password).mask("Type your Password.")
+     end
 end
+

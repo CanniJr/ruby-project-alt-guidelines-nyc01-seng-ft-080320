@@ -26,3 +26,4 @@ yuki = Cat.create(name: "Yuki", color: "white", gender: "female", movie: whisper
 haru = Cat.create(name: "Haru", color: "brown", gender: "female", movie: cat_returns)
 niya = Cat.create(name: "Niya", color: "beige", gender: "male", movie: spirit)
 natori = Cat.create(name: "Natori", color: "grey", gender: "male", movie: howls_castle)
+catbus = Cat.create(name: "Catbus", color: "brown", gender: "male", movie: mnt)

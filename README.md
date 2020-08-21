@@ -1,7 +1,7 @@
 1.  Point of this application is to show a list of cats from the movie chosen by user.
     - A user can login
     - Given a selection of movies that has cats in them
-    - receive a list of cats associated with the movie
+    - receive a list of cats associated with the movie (currently stuck in trying to get method working)
 
 2.  Database is 100% hard-coded from the Studio Ghibli API 
     https://ghibliapi.herokuapp.com/
